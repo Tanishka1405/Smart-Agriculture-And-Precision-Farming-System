@@ -50,32 +50,31 @@ ________________________________________
 -	Supply Chain Manager: Manages inventory and optimizes distribution plans based on processed data from the Central Server.
 _________________________________________
 ## 5. Project Structure
--  Contains TypeScript source files
-- : Output directory for compiled JavaScript
-- : Classes for system components (e.g., MobileApp, Sensors)
+-  OneDrive/Desktop/Typescript_Smart_Agriculture/ : contains TypeScript source files
+- models/: Classes for system components (e.g., MobileApp, Sensors)
 _________________________________________
 
 ## 6. TypeScript in the System
 ### 6.1. TypeScript Basics:
 TypeScript is a superset of JavaScript that introduces static typing and compile-time error checking. It helps in catching potential bugs early during development, improving the stability of the application.
 
--Types: In TypeScript, data types such as number, string, boolean, and custom types (via interfaces and classes) are explicitly defined, which helps in reducing errors related to incorrect data handling.
--Classes and Interfaces: TypeScript supports object-oriented programming principles like inheritance, encapsulation, and polymorphism, making it easier to model the real-world entities in agriculture.
+- Types: In TypeScript, data types such as number, string, boolean, and custom types (via interfaces and classes) are explicitly defined, which helps in reducing errors related to incorrect data handling.
+- Classes and Interfaces: TypeScript supports object-oriented programming principles like inheritance, encapsulation, and polymorphism, making it easier to model the real-world entities in agriculture.
 ### 6.2. Object-Oriented Modeling with TypeScript:
 The Smart Agriculture and Precision Farming System can be built using an object-oriented approach. Various components in the farming ecosystem such as Farm, Sensor, Controller, and Edge Devices are modeled as TypeScript classes with attributes and methods that define their behaviors.
 
 #### Key Entities:
--Farm: A farm consists of multiple IoT devices, such as sensors and controllers. In TypeScript, the Farm class manages these devices and interacts with other entities like the Farmer and Agronomist.
--Sensor: Sensors collect data such as soil moisture and temperature, modeled using a class that encapsulates sensor-related attributes and methods to retrieve data.
--Controller: The Controller (e.g., irrigation system) adjusts water flow based on sensor data. This is a class that encapsulates control logic and state management (e.g., turning irrigation on/off).
+- Farm: A farm consists of multiple IoT devices, such as sensors and controllers. In TypeScript, the Farm class manages these devices and interacts with other entities like the Farmer and Agronomist.
+- Sensor: Sensors collect data such as soil moisture and temperature, modeled using a class that encapsulates sensor-related attributes and methods to retrieve data.
+- Controller: The Controller (e.g., irrigation system) adjusts water flow based on sensor data. This is a class that encapsulates control logic and state management (e.g., turning irrigation on/off).
 ### 6.3. Farm Management Services:
 In a precision farming system, Farm Management Services play a crucial role in managing the farms, sensors, controllers, and associated data. These services, implemented in TypeScript, provide a high-level abstraction for handling farm operations, including data collection, decision-making, and control systems.
 
 The service interacts with:
 
--Mobile App: A farmer uses a mobile app to access real-time data and send commands to control irrigation and other farming operations.
--Edge Device: A device that collects data from multiple sensors, processes it locally, and sends it to the central system for further analysis.
--Irrigation System: A controller that adjusts the water flow based on data received from the system.
+- Mobile App: A farmer uses a mobile app to access real-time data and send commands to control irrigation and other farming operations.
+- Edge Device: A device that collects data from multiple sensors, processes it locally, and sends it to the central system for further analysis.
+- Irrigation System: A controller that adjusts the water flow based on data received from the system.
 
 ### 6.4. Centralized Data Processing and Automation:
 The Central Server stores data collected from various IoT devices, processes it, and provides insights into farming activities. This data includes sensor readings, irrigation statuses, weather predictions, and yield forecasts. The Agronomist class analyzes this data to provide expert recommendations to farmers.
