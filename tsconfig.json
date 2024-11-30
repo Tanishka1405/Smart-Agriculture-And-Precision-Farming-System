@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",  // Compile to ES6 JavaScript
+    "module": "commonjs",  // Use CommonJS module system (required for Node.js)
+    "outDir": "dist",  // Output compiled JavaScript to the "dist" folder
+    "rootDir": ".",  // Set rootDir to the root of the project so TypeScript includes all folders
+    "strict": true,  // Enable strict type checking
+    "esModuleInterop": true,  // Ensures compatibility with CommonJS modules
+    "skipLibCheck": true,  // Skip checking library files to improve build time
+    "forceConsistentCasingInFileNames": true,  // Enforce consistent casing in file names
+    "moduleResolution": "node",  // Resolves modules as Node.js does
+    "resolveJsonModule": true,  // Allows importing JSON files
+    "isolatedModules": true,  // Treat each file as an isolated module
+    "allowJs": true  // Allow JavaScript files to be compiled (if mixed with TypeScript)
+  },
+  "include": [
+    "models/**/*",  // Include all TypeScript files from the "models" folder
+    "tests/**/*"    // Include all TypeScript files from the "tests" folder
+  ],
+  "exclude": [
+    "node_modules",  // Exclude node_modules folder
+    "dist"    // Ensure test files aren't compiled by TypeScript
+  ]
+}
